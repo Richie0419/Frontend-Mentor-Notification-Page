@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+--White: hsl(0, 0%, 100%);
+--Verylightgrayishblue: hsl(210, 60%, 98%);
+--Lightgrayishblue-1: hsl(211, 68%, 94%);
+--Lightgrayishblue-2: hsl(205, 33%, 90%);
+--Grayishblue: hsl(219, 14%, 63%);
+--Darkgrayish-blue: hsl(219, 12%, 42%);
+--Verydarkblue: hsl(224, 21%, 14%);
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--Verylightgrayishblue);
+    font-size: 1rem;
+}
+
+.container{
+    max-width: 700px;
+    margin: 5rem auto;
+    background: var(--White);
+    padding: 2rem 1.5rem 0.5rem;
+    border-radius: 10px;
+}
+
+.notification-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.read{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--Grayishblue);
+    font-size: 1.1rem;
+}
+
+.read:hover{
+    color: var(--Blue);
+    transition: all 0.3s ease;
+}
+
+.title{
+    color: var(--Verydarkblue);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.num{
+    background-color: var(--Blue);
+    padding: 0.2rem 0.7rem;
+    font-weight: 800;
+    color: var(--White);
+    border-radius: 5px;
+}
+
+.notification-box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+.unseen{
+    background-color: var(--Verylightgrayishblue);
+    border-radius: 10px;
+}
+
+.avatar img{
+    width: 50px;
+}
+
+.profile{
+    color: var(--Verydarkblue);
+    font-weight: 800;
+    margin-right: 0.3rem;
+}
+
+.profile:hover{
+    color: var(--Blue);
+    font-weight: 800;
+}
+
+.time{
+    color: var(--Grayishblue);
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.group{
+    color: var(--Blue);
+    font-weight: 800;
+    margin-left: 0.3rem;
+}
+
+.post{
+    color: var(--Verydarkblue);
+    font-weight: 800;
+}
+
+.post:hover{
+    color: var(--Blue);
+}
+
+.message-box{
+    border: 1px solid var(--Lightgrayishblue-2);
+    padding: 0.8rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+    color: var(--v);
+    cursor: pointer;
+}
+
+.message-box:hover{
+    background-color: var(--Lightgrayishblue-1);
+}
+
+.msg{
+    align-items: flex-start;
+}
+
+.flex-comment{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment img{
+    width: 50px;
+}
+
+span.dot{
+    display: inline-block;
+    background-color: var(--Red);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .container{
+        margin: 3rem auto;
+        max-width: 385px;
+        padding: 2rem 1rem;
+    }
+
+    .top-bar{
+        gap: 0.5rem;
+    }
+
+    .notification-header{
+        margin-bottom: 1.5rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .read{
+        font-size: 1rem;
+    }
+
+    .num{
+        font-size: 0.8rem;
+    }
+
+    span.dot{
+        margin-top: -1.2rem;
+        
+    }
+}
